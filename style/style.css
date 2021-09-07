@@ -1,4 +1,59 @@
+:root {
+    --main-bg-color: #2e2e2e;
+    --main-font-color: #ffffff;
+    --secondary-font-color: #a6a6a6;
+    --main-font-style: 'inter';
+    --font-size-large: 80px;
+    --font-size-medium: 28.34px;
+    --font-size-small: 16.87px;
+}
+
 body {
     margin: 0;
-    background: #2E2E2E;
+    background: var(--main-bg-color);
+    font-family: var(--main-font-style);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+ul > li > a {
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    font-size: var(--font-size-small);
+}
+
+h1 {
+    color: var(--main-font-color);
+    font-size: var(--font-size-medium);
+}
+
+.hero {
+    padding: 2em;
+}
+
+#logo {
+    color: var(--main-font-color);
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+}
+
+#hero-img {
+    width: 100%;
+    margin-top: 13%;
 }
